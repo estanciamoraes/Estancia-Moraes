@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Estância Moraes</title>
+
+  <style>
+
+    * {
+
+      box-sizing: border-box;
+
+    }
+
+    body {
+
+      margin: 0;
+
+      font-family: Arial, sans-serif;
+
+      color: #2f352e;
+
+      background: #faf9f5;
+
+    }
+
+    .hero {
+
+      min-height: 75vh;
+
+      padding: 80px 25px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      background: linear-gradient(135deg, #dce7d5, #f4eee2);
+
+    }
+
+    .hero-content {
+
+      max-width: 750px;
+
+    }
+
+    .hero small {
+
+      letter-spacing: 4px;
+
+      font-weight: bold;
+
+    }
+
+    h1 {
+
+      font-size: 52px;
+
+      margin: 20px 0;
+
+    }
+
+    h2 {
+
+      font-size: 32px;
+
+    }
+
+    p {
+
+      font-size: 18px;
+
+      line-height: 1.7;
+
+    }
+
+    .botoes {
+
+      display: flex;
+
+      gap: 12px;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      margin-top: 30px;
+
+    }
+
+    .botao {
+
+      display: inline-block;
+
+      padding: 14px 22px;
+
+      border-radius: 30px;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+    }
+
+    .booking {
+
+      background: #52684d;
+
+      color: white;
+
+    }
+
+    .airbnb {
+
+      background: white;
+
+      color: #52684d;
+
+      border: 2px solid #52684d;
+
+    }
+
+    .whatsapp {
+
+      background: #279447;
+
+      color: white;
+
+    }
+
+    section {
+
+      max-width: 1000px;
+
+      margin: auto;
+
+      padding: 70px 25px;
+
+    }
+
+    .centralizado {
+
+      text-align: center;
+
+    }
+
+    .comodidades {
+
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 20px;
+
+    }
+
+    .comodidade {
+
+      background: white;
+
+      padding: 25px;
+
+      border-radius: 18px;
+
+      text-align: center;
+
+      box-shadow: 0 5px 20px rgba(0,0,0,.06);
+
+    }
+
+    .icone {
+
+      font-size: 40px;
+
+    }
+
+    .galeria {
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 15px;
+
+    }
+
+    .foto {
+
+      height: 220px;
+
+      border-radius: 18px;
+
+      background: #dedbd1;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      color: #777;
+
+      font-weight: bold;
+
+    }
+
+    footer {
+
+      background: #293328;
+
+      color: white;
+
+      text-align: center;
+
+      padding: 35px 20px;
+
+    }
+
+    @media (max-width: 700px) {
+
+      h1 {
+
+        font-size: 38px;
+
+      }
+
+      .comodidades {
+
+        grid-template-columns: repeat(2, 1fr);
+
+      }
+
+      .galeria {
+
+        grid-template-columns: 1fr 1fr;
+
+      }
+
+    }
+
+    @media (max-width: 450px) {
+
+      .comodidades,
+
+      .galeria {
+
+        grid-template-columns: 1fr;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="hero">
+
+    <div class="hero-content">
+
+      <small>ESTÂNCIA MORAES</small>
+
+      <h1>Seu refúgio perto de Pirenópolis</h1>
+
+      <p>
+
+        Um espaço especial para descansar, se divertir e aproveitar
+
+        momentos inesquecíveis com a família e os amigos.
+
+      </p>
+
+      <div class="botoes">
+
+        <a class="botao booking"
+
+           href="https://www.booking.com/Share-1VINV6"
+
+           target="_blank">
+
+          Reservar pelo Booking
+
+        </a>
+
+        <a class="botao airbnb"
+
+           href="https://www.airbnb.com.br/rooms/1745824330797880590?unique_share_id=068b55f1-788e-4f70-a170-81f21ba41a4b&viralityEntryPoint=1&s=76"
+
+           target="_blank">
+
+          Ver no Airbnb
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <section>
+
+    <div class="centralizado">
+
+      <small>CONHEÇA A ESTÂNCIA</small>
+
+      <h2>Um lugar para aproveitar</h2>
+
+      <p>
+
+        A Estância Moraes conta com 3 quartos e acomoda até 10 pessoas.
+
+        É o lugar ideal para quem busca tranquilidade, lazer e momentos
+
+        especiais perto de Pirenópolis.
+
+      </p>
+
+      <p>
+
+        📍 Aproximadamente 15 km do centro de Pirenópolis - GO
+
+      </p>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="centralizado">
+
+      <small>COMODIDADES</small>
+
+      <h2>Tudo para você aproveitar</h2>
+
+    </div>
+
+    <div class="comodidades">
+
+      <div class="comodidade">
+
+        <div class="icone">🏡</div>
+
+        <h3>3 quartos</h3>
+
+        <p>Até 10 pessoas</p>
+
+      </div>
+
+      <div class="comodidade">
+
+        <div class="icone">🏊</div>
+
+        <h3>Piscina</h3>
+
+        <p>Para aproveitar os dias de descanso</p>
+
+      </div>
+
+      <div class="comodidade">
+
+        <div class="icone">🔥</div>
+
+        <h3>Churrasqueira</h3>
+
+        <p>Perfeita para reunir a família</p>
+
+      </div>
+
+      <div class="comodidade">
+
+        <div class="icone">🎱</div>
+
+        <h3>Sinuca</h3>
+
+        <p>Diversão para todos</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="centralizado">
+
+      <small>GALERIA</small>
+
+      <h2>Conheça nosso espaço</h2>
+
+    </div>
+
+    <div class="galeria">
+
+      <div class="foto">Foto da piscina</div>
+
+      <div class="foto">Foto da chácara</div>
+
+      <div class="foto">Foto dos quartos</div>
+
+      <div class="foto">Foto da churrasqueira</div>
+
+      <div class="foto">Foto da sinuca</div>
+
+      <div class="foto">Mais fotos</div>
+
+    </div>
+
+  </section>
+
+  <section class="centralizado">
+
+    <small>RESERVAS</small>
+
+    <h2>Escolha onde reservar</h2>
+
+    <p>
+
+      Consulte disponibilidade e faça sua reserva através das plataformas
+
+      ou fale diretamente conosco.
+
+    </p>
+
+    <div class="botoes">
+
+      <a class="botao booking"
+
+         href="https://www.booking.com/Share-1VINV6"
+
+         target="_blank">
+
+        Booking
+
+      </a>
+
+      <a class="botao airbnb"
+
+         href="https://www.airbnb.com.br/rooms/1745824330797880590?unique_share_id=068b55f1-788e-4f70-a170-81f21ba41a4b&viralityEntryPoint=1&s=76"
+
+         target="_blank">
+
+        Airbnb
+
+      </a>
+
+      <a class="botao whatsapp"
+
+         href="https://wa.me/5562993213203"
+
+         target="_blank">
+
+        WhatsApp
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <strong>Estância Moraes</strong>
+
+    <p>
+
+      Um lugar para descansar, se divertir e criar boas memórias.
+
+    </p>
+
+  </footer>
+
+</body>
+
+</html>
