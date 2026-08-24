@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Estância Moraes | Pirenópolis - Goiás</title>
+  <title>Estância Moraes | Pirenópolis</title>
 
   <meta name="description"
-    content="Estância Moraes — seu tempo, seu espaço, seu refúgio próximo a Pirenópolis, Goiás.">
+    content="Estância Moraes — seu espaço para descansar, aproveitar e criar memórias perto de Pirenópolis, Goiás.">
 
   <style>
 
@@ -22,441 +22,577 @@
 
     body {
       margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      color: #293329;
-      background: #f8f6f0;
+      background: #f5f1e8;
+      color: #263127;
+      font-family: Arial, sans-serif;
     }
 
     /* TOPO */
 
     .hero {
-      min-height: 92vh;
+      min-height: 100vh;
+
       background:
         linear-gradient(
-          rgba(25, 35, 27, 0.55),
-          rgba(25, 35, 27, 0.55)
+          rgba(27, 35, 28, 0.52),
+          rgba(27, 35, 28, 0.52)
         ),
-        linear-gradient(135deg, #5c6b55, #d8d0bc);
+        linear-gradient(
+          135deg,
+          #344536,
+          #b9ad91
+        );
+
+      background-size: cover;
+      background-position: center;
 
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-items: flex-end;
 
-      text-align: center;
+      padding: 70px 7%;
+
       color: white;
 
-      padding: 60px 25px;
+      position: relative;
     }
 
     .hero-content {
-      max-width: 850px;
+      max-width: 900px;
+      position: relative;
+      z-index: 2;
     }
 
-    .localizacao-topo {
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      letter-spacing: 4px;
-      margin-bottom: 30px;
-      opacity: 0.9;
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 5px;
+      margin-bottom: 25px;
     }
 
     .hero h1 {
-      font-size: clamp(48px, 9vw, 92px);
+      font-family: Georgia, serif;
+      font-size: clamp(64px, 11vw, 145px);
       font-weight: normal;
-      margin: 0 0 20px;
-      letter-spacing: 1px;
+      line-height: 0.9;
+      margin: 0;
+      letter-spacing: -2px;
     }
 
     .hero h2 {
-      font-size: clamp(25px, 5vw, 42px);
+      font-family: Georgia, serif;
       font-weight: normal;
-      margin: 0 0 25px;
+      font-size: clamp(25px, 4vw, 42px);
+      line-height: 1.2;
+      margin: 30px 0 0;
     }
 
     .hero p {
-      font-family: Arial, sans-serif;
-      font-size: 18px;
-      line-height: 1.8;
       max-width: 650px;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .botao-topo {
+      display: inline-block;
+      margin-top: 25px;
+
+      color: white;
+      text-decoration: none;
+
+      border: 1px solid rgba(255,255,255,0.8);
+
+      padding: 15px 25px;
+
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+    /* NÚMEROS */
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      max-width: 1100px;
+
+      margin: auto;
+
+      padding: 65px 25px;
+
+      border-bottom: 1px solid #d8d0bf;
+    }
+
+    .stat {
+      text-align: center;
+
+      border-right: 1px solid #d8d0bf;
+    }
+
+    .stat:last-child {
+      border-right: none;
+    }
+
+    .stat strong {
+      display: block;
+
+      font-family: Georgia, serif;
+
+      font-size: 48px;
+
+      font-weight: normal;
+    }
+
+    .stat span {
+      font-size: 10px;
+
+      letter-spacing: 3px;
+
+      color: #77766d;
+    }
+
+    /* FRASE */
+
+    .statement {
+      max-width: 1050px;
+
+      margin: auto;
+
+      padding: 120px 25px;
+    }
+
+    .tag {
+      font-size: 10px;
+
+      letter-spacing: 4px;
+
+      color: #9a8150;
+    }
+
+    .statement h2 {
+      font-family: Georgia, serif;
+
+      font-size: clamp(44px, 7vw, 82px);
+
+      line-height: 1.05;
+
+      font-weight: normal;
+
+      max-width: 900px;
+
+      margin: 20px 0;
+    }
+
+    .statement p {
+      max-width: 600px;
+
+      color: #62675f;
+
+      line-height: 1.9;
+
+      font-size: 17px;
+    }
+
+    /* BLOCO ESCURO */
+
+    .story {
+      background: #263127;
+
+      color: white;
+
+      padding: 120px 7%;
+    }
+
+    .story-grid {
+      max-width: 1100px;
+
+      margin: auto;
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 80px;
+
+      align-items: center;
+    }
+
+    .story h2 {
+      font-family: Georgia, serif;
+
+      font-size: clamp(42px, 6vw, 70px);
+
+      line-height: 1.05;
+
+      font-weight: normal;
+
+      margin: 20px 0;
+    }
+
+    .story p {
+      color: #d2d7d0;
+
+      line-height: 1.9;
+    }
+
+    .story-list {
+      border-left: 1px solid #687064;
+
+      padding-left: 35px;
+    }
+
+    .story-list div {
+      padding: 25px 0;
+
+      border-bottom: 1px solid #687064;
+    }
+
+    .story-list strong {
+      display: block;
+
+      font-family: Georgia, serif;
+
+      font-size: 27px;
+
+      font-weight: normal;
+
+      margin-bottom: 8px;
+    }
+
+    .story-list span {
+      font-size: 14px;
+
+      color: #c3c8c1;
+    }
+
+    /* GALERIA */
+
+    .image-band {
+      max-width: 1200px;
+
+      margin: auto;
+
+      padding: 100px 25px;
+    }
+
+    .image-main {
+      height: 600px;
+
+      background: #c6bca6;
+
+      display: flex;
+
+      align-items: flex-end;
+
+      padding: 35px;
+
+      color: white;
+
+      font-family: Georgia, serif;
+
+      font-size: 28px;
+    }
+
+    .image-grid {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 16px;
+
+      margin-top: 16px;
+    }
+
+    .image-small {
+      height: 330px;
+
+      background: #d8d1c0;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      color: #77736b;
+
+      font-size: 11px;
+
+      letter-spacing: 2px;
+    }
+
+    /* DIA */
+
+    .day {
+      background: #e7e0d1;
+
+      padding: 110px 7%;
+    }
+
+    .day-inner {
+      max-width: 1100px;
+
       margin: auto;
     }
 
-    /* BOTÕES */
+    .day h2 {
+      font-family: Georgia, serif;
 
-    .botoes {
+      font-size: clamp(42px, 6vw, 72px);
+
+      font-weight: normal;
+
+      margin: 15px 0 60px;
+    }
+
+    .timeline {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 20px;
+    }
+
+    .time {
+      padding: 35px;
+
+      background: #f5f1e8;
+
+      min-height: 230px;
+    }
+
+    .time small {
+      letter-spacing: 3px;
+
+      color: #9a8150;
+    }
+
+    .time h3 {
+      font-family: Georgia, serif;
+
+      font-size: 30px;
+
+      font-weight: normal;
+
+      margin: 20px 0 10px;
+    }
+
+    .time p {
+      color: #62675f;
+
+      line-height: 1.7;
+    }
+
+    /* LOCALIZAÇÃO */
+
+    .location {
+      max-width: 1100px;
+
+      margin: auto;
+
+      padding: 120px 25px;
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 80px;
+
+      align-items: center;
+    }
+
+    .location h2 {
+      font-family: Georgia, serif;
+
+      font-size: clamp(45px, 6vw, 75px);
+
+      font-weight: normal;
+
+      margin: 15px 0;
+    }
+
+    .location p {
+      color: #62675f;
+
+      line-height: 1.9;
+    }
+
+    .map {
+      height: 360px;
+
+      background: #cbc5b4;
+
       display: flex;
+
+      align-items: center;
+
       justify-content: center;
-      flex-wrap: wrap;
+
+      text-align: center;
+
+      color: #6d695f;
+    }
+
+    /* RESERVAS */
+
+    .final {
+      background: #1b241d;
+
+      color: white;
+
+      text-align: center;
+
+      padding: 130px 25px;
+    }
+
+    .final h2 {
+      font-family: Georgia, serif;
+
+      font-size: clamp(45px, 7vw, 85px);
+
+      line-height: 1.05;
+
+      font-weight: normal;
+
+      max-width: 900px;
+
+      margin: 20px auto;
+    }
+
+    .final p {
+      color: #ccd1ca;
+
+      max-width: 600px;
+
+      margin: auto;
+
+      line-height: 1.8;
+    }
+
+    .buttons {
+      display: flex;
+
+      justify-content: center;
+
       gap: 12px;
-      margin-top: 35px;
+
+      flex-wrap: wrap;
+
+      margin-top: 40px;
     }
 
-    .botao {
-      font-family: Arial, sans-serif;
-      text-decoration: none;
-      padding: 14px 25px;
+    .buttons a {
+      padding: 15px 24px;
+
       border-radius: 30px;
-      font-size: 13px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      transition: 0.3s;
-    }
 
-    .botao:hover {
-      transform: translateY(-2px);
+      text-decoration: none;
+
+      font-size: 11px;
+
+      letter-spacing: 1.5px;
+
+      font-weight: bold;
     }
 
     .booking {
-      background: #b7a26a;
+      background: #b59b5c;
+
       color: white;
     }
 
     .airbnb {
       background: white;
-      color: #344333;
+
+      color: #263127;
     }
 
     .whatsapp {
-      background: #2f8f55;
+      background: #2e8d52;
+
       color: white;
-    }
-
-    /* SEÇÕES */
-
-    section {
-      max-width: 1050px;
-      margin: auto;
-      padding: 100px 25px;
-    }
-
-    .titulo-pequeno {
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      letter-spacing: 4px;
-      color: #9b8654;
-      font-weight: bold;
-      margin-bottom: 18px;
-    }
-
-    h2 {
-      font-size: clamp(34px, 5vw, 52px);
-      font-weight: normal;
-      margin: 0 0 25px;
-      line-height: 1.15;
-    }
-
-    p {
-      font-family: Arial, sans-serif;
-      font-size: 17px;
-      line-height: 1.8;
-      color: #596057;
-    }
-
-    .texto-central {
-      text-align: center;
-      max-width: 780px;
-      margin: auto;
-    }
-
-    /* FRASE */
-
-    .assinatura {
-      text-align: center;
-      font-family: Arial, sans-serif;
-      letter-spacing: 2px;
-      font-size: 13px;
-      color: #766a4d;
-      margin-top: 40px;
-    }
-
-    /* ESTRUTURA */
-
-    .estrutura {
-      background: #eeeade;
-      max-width: none;
-    }
-
-    .estrutura-conteudo {
-      max-width: 1050px;
-      margin: auto;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 15px;
-      margin-top: 45px;
-    }
-
-    .card {
-      background: #faf9f4;
-      padding: 30px 20px;
-      text-align: center;
-      min-height: 190px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .icone {
-      font-size: 35px;
-      margin-bottom: 12px;
-    }
-
-    .card h3 {
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      margin: 5px 0 10px;
-      color: #303b31;
-    }
-
-    .card p {
-      font-size: 14px;
-      margin: 0;
-      line-height: 1.5;
-    }
-
-    /* PARA QUEM */
-
-    .experiencias {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      margin-top: 45px;
-    }
-
-    .experiencia {
-      padding: 35px;
-      border-top: 1px solid #c8c1ac;
-    }
-
-    .experiencia h3 {
-      font-size: 25px;
-      font-weight: normal;
-    }
-
-    /* ACOMODAÇÃO */
-
-    .acomodacao {
-      background: #293329;
-      color: white;
-      max-width: none;
-    }
-
-    .acomodacao-conteudo {
-      max-width: 1050px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .acomodacao p {
-      color: #d7d9d2;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    .numeros {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
-      max-width: 650px;
-      margin: 50px auto 0;
-    }
-
-    .numero {
-      border: 1px solid rgba(255,255,255,0.25);
-      padding: 30px;
-    }
-
-    .numero strong {
-      display: block;
-      font-size: 48px;
-      font-weight: normal;
-    }
-
-    .numero span {
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      letter-spacing: 3px;
-    }
-
-    /* GALERIA */
-
-    .galeria {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
-      margin-top: 45px;
-    }
-
-    .foto {
-      height: 260px;
-      background: #ddd9ca;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #817d70;
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-    }
-
-    /* FRASE GRANDE */
-
-    .manifesto {
-      max-width: none;
-      background: #e7e2d3;
-      text-align: center;
-    }
-
-    .manifesto h2 {
-      max-width: 850px;
-      margin: auto;
-      font-size: clamp(32px, 5vw, 58px);
-    }
-
-    .manifesto p {
-      max-width: 700px;
-      margin: 30px auto 0;
-    }
-
-    /* LOCALIZAÇÃO */
-
-    .localizacao {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    .mapa {
-      min-height: 350px;
-      background: #d7d3c5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 30px;
-      font-family: Arial, sans-serif;
-      color: #68665d;
-    }
-
-    /* RESERVAS */
-
-    .reserva {
-      background: #f0ede3;
-      max-width: none;
-      text-align: center;
-    }
-
-    .reserva-conteudo {
-      max-width: 800px;
-      margin: auto;
     }
 
     /* RODAPÉ */
 
     footer {
-      background: #202920;
+      background: #141b16;
+
       color: white;
+
       text-align: center;
+
       padding: 50px 25px;
     }
 
     footer strong {
-      font-size: 25px;
+      font-family: Georgia, serif;
+
+      font-size: 30px;
+
       font-weight: normal;
     }
 
     footer p {
-      color: #c9cec7;
-      font-size: 14px;
-    }
+      font-size: 12px;
 
-    /* WHATSAPP FIXO */
-
-    .whatsapp-fixo {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      background: #2f8f55;
-      color: white;
-      padding: 14px 20px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-      font-size: 14px;
-      z-index: 9999;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      color: #aeb5ad;
     }
 
     /* CELULAR */
 
-    @media (max-width: 900px) {
-
-      .cards {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .experiencias {
-        grid-template-columns: 1fr;
-      }
-
-      .localizacao {
-        grid-template-columns: 1fr;
-      }
-
-    }
-
-    @media (max-width: 600px) {
-
-      section {
-        padding: 70px 20px;
-      }
+    @media (max-width: 700px) {
 
       .hero {
-        min-height: 85vh;
+        min-height: 90vh;
+
+        padding: 50px 25px;
       }
 
       .hero h1 {
-        font-size: 48px;
+        font-size: 65px;
       }
 
-      .hero p {
-        font-size: 16px;
-      }
-
-      .cards {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .galeria {
+      .stats {
         grid-template-columns: 1fr;
       }
 
-      .foto {
-        height: 230px;
+      .stat {
+        border-right: none;
+
+        border-bottom: 1px solid #d8d0bf;
+
+        padding: 22px;
       }
 
-      .numeros {
-        grid-template-columns: 1fr 1fr;
+      .stat:last-child {
+        border-bottom: none;
       }
 
-      .whatsapp-fixo {
-        right: 15px;
-        bottom: 15px;
+      .story-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
       }
 
-    }
+      .image-main {
+        height: 400px;
+      }
 
-    @media (max-width: 420px) {
-
-      .cards {
+      .image-grid {
         grid-template-columns: 1fr;
       }
 
-      .numeros {
+      .image-small {
+        height: 260px;
+      }
+
+      .timeline {
         grid-template-columns: 1fr;
+      }
+
+      .location {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
       }
 
     }
@@ -474,241 +610,138 @@
 
     <div class="hero-content">
 
-      <div class="localizacao-topo">
-        PIRENÓPOLIS • GOIÁS
+      <div class="eyebrow">
+        PIRENÓPOLIS · GOIÁS
       </div>
 
-      <h1>ESTÂNCIA MORAES</h1>
+      <h1>
+        ESTÂNCIA<br>MORAES
+      </h1>
 
       <h2>
-        Seu tempo. Seu espaço. Seu refúgio.
+        Onde o tempo desacelera.
       </h2>
 
-      <p>
-        Desconecte da rotina, respire fundo e aproveite
-        momentos especiais em meio à natureza, a aproximadamente
-        15 km do centro de Pirenópolis.
-      </p>
-
-      <div class="botoes">
-
-        <a class="botao booking"
-           href="https://www.booking.com/Share-1VINV6"
-           target="_blank">
-          RESERVAR NO BOOKING
-        </a>
-
-        <a class="botao airbnb"
-           href="https://www.airbnb.com.br/rooms/1745824330797880590?unique_share_id=068b55f1-788e-4f70-a170-81f21ba41a4b&viralityEntryPoint=1&s=76"
-           target="_blank">
-          AIRBNB
-        </a>
-
-        <a class="botao whatsapp"
-           href="https://wa.me/5562993213203"
-           target="_blank">
-          WHATSAPP
-        </a>
-
-      </div>
+      <a class="botao-topo" href="#estancia">
+        CONHECER A ESTÂNCIA
+      </a>
 
     </div>
 
   </header>
 
 
-  <!-- A ESTÂNCIA -->
+  <!-- NÚMEROS -->
 
-  <section>
+  <section class="stats">
 
-    <div class="texto-central">
+    <div class="stat">
+      <strong>03</strong>
+      <span>QUARTOS</span>
+    </div>
 
-      <div class="titulo-pequeno">
-        A ESTÂNCIA
-      </div>
+    <div class="stat">
+      <strong>10</strong>
+      <span>HÓSPEDES</span>
+    </div>
 
-      <h2>
-        Um lugar para viver sem pressa
-      </h2>
-
-      <p>
-        A Estância Moraes foi pensada para quem procura
-        tranquilidade, espaço e bons momentos em meio à natureza.
-      </p>
-
-      <p>
-        Um lugar para reunir a família, encontrar os amigos,
-        aproveitar os dias de descanso e transformar uma simples
-        viagem em uma experiência especial.
-      </p>
-
-      <div class="assinatura">
-        DESCANSO • LIBERDADE • EXPERIÊNCIAS • MEMÓRIAS
-      </div>
-
+    <div class="stat">
+      <strong>15 km</strong>
+      <span>DE PIRENÓPOLIS</span>
     </div>
 
   </section>
 
 
-  <!-- ESTRUTURA -->
+  <!-- CONCEITO -->
 
-  <section class="estrutura">
+  <section class="statement" id="estancia">
 
-    <div class="estrutura-conteudo">
-
-      <div class="texto-central">
-
-        <div class="titulo-pequeno">
-          A ESTRUTURA
-        </div>
-
-        <h2>
-          Tudo para aproveitar o seu tempo
-        </h2>
-
-      </div>
-
-
-      <div class="cards">
-
-        <div class="card">
-          <div class="icone">🏊</div>
-          <h3>Piscina</h3>
-          <p>
-            Um convite para desacelerar e aproveitar os dias de sol.
-          </p>
-        </div>
-
-
-        <div class="card">
-          <div class="icone">🔥</div>
-          <h3>Churrasqueira</h3>
-          <p>
-            Reúna quem você gosta e aproveite bons momentos.
-          </p>
-        </div>
-
-
-        <div class="card">
-          <div class="icone">🎱</div>
-          <h3>Sinuca</h3>
-          <p>
-            Diversão para compartilhar durante a estadia.
-          </p>
-        </div>
-
-
-        <div class="card">
-          <div class="icone">⛺</div>
-          <h3>Área de camping</h3>
-          <p>
-            Mais uma maneira de estar perto da natureza.
-          </p>
-        </div>
-
-
-        <div class="card">
-          <div class="icone">🛏️</div>
-          <h3>3 quartos</h3>
-          <p>
-            Espaço para acomodar até 10 pessoas.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- PARA QUEM -->
-
-  <section>
-
-    <div class="titulo-pequeno">
-      EXPERIÊNCIAS
+    <div class="tag">
+      ESTÂNCIA MORAES
     </div>
 
     <h2>
-      Feita para diferentes momentos
+      Alguns lugares você visita.
+      <br>
+      Outros você guarda.
     </h2>
 
-
-    <div class="experiencias">
-
-      <div class="experiencia">
-
-        <h3>Família</h3>
-
-        <p>
-          Um espaço para estar junto, conversar,
-          descansar e criar novas memórias.
-        </p>
-
-      </div>
-
-
-      <div class="experiencia">
-
-        <h3>Amigos</h3>
-
-        <p>
-          Piscina, sinuca, churrasqueira e liberdade
-          para aproveitar cada momento.
-        </p>
-
-      </div>
-
-
-      <div class="experiencia">
-
-        <h3>Fim de semana</h3>
-
-        <p>
-          Uma pausa na rotina para respirar,
-          desacelerar e voltar renovado.
-        </p>
-
-      </div>
-
-    </div>
+    <p>
+      Um espaço pensado para dias tranquilos,
+      encontros especiais e momentos que não
+      precisam de pressa.
+    </p>
 
   </section>
 
 
-  <!-- ACOMODAÇÃO -->
+  <!-- EXPERIÊNCIAS -->
 
-  <section class="acomodacao">
+  <section class="story">
 
-    <div class="acomodacao-conteudo">
+    <div class="story-grid">
 
-      <div class="titulo-pequeno">
-        ACOMODAÇÃO
-      </div>
+      <div>
 
-      <h2>
-        Espaço para compartilhar
-      </h2>
-
-      <p>
-        Três quartos e estrutura para receber
-        grupos de até 10 pessoas com conforto
-        e liberdade para aproveitar a estadia.
-      </p>
-
-
-      <div class="numeros">
-
-        <div class="numero">
-          <strong>3</strong>
-          <span>QUARTOS</span>
+        <div class="tag">
+          O QUE ESPERA POR VOCÊ
         </div>
 
-        <div class="numero">
-          <strong>10</strong>
-          <span>HÓSPEDES</span>
+        <h2>
+          Seu espaço.
+          <br>
+          Seu ritmo.
+        </h2>
+
+        <p>
+          Aproveite a Estância do jeito que fizer
+          sentido para você: descansando, reunindo
+          pessoas queridas ou simplesmente curtindo
+          a natureza.
+        </p>
+
+      </div>
+
+
+      <div class="story-list">
+
+        <div>
+
+          <strong>
+            Para desacelerar
+          </strong>
+
+          <span>
+            Piscina, natureza e espaço para respirar.
+          </span>
+
+        </div>
+
+
+        <div>
+
+          <strong>
+            Para compartilhar
+          </strong>
+
+          <span>
+            Churrasqueira, sinuca e bons momentos.
+          </span>
+
+        </div>
+
+
+        <div>
+
+          <strong>
+            Para viver
+          </strong>
+
+          <span>
+            Área de camping e liberdade para aproveitar.
+          </span>
+
         </div>
 
       </div>
@@ -720,122 +753,155 @@
 
   <!-- GALERIA -->
 
-  <section>
+  <section class="image-band">
 
-    <div class="texto-central">
+    <div class="image-main">
+      FOTO PRINCIPAL DA ESTÂNCIA
+    </div>
 
-      <div class="titulo-pequeno">
-        REGISTROS
+
+    <div class="image-grid">
+
+      <div class="image-small">
+        FOTO DA PISCINA
+      </div>
+
+      <div class="image-small">
+        FOTO DA CHÁCARA
+      </div>
+
+      <div class="image-small">
+        FOTO DOS QUARTOS
+      </div>
+
+      <div class="image-small">
+        FOTO DA ÁREA DE CAMPING
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- UM DIA -->
+
+  <section class="day">
+
+    <div class="day-inner">
+
+      <div class="tag">
+        UM DIA NA ESTÂNCIA
       </div>
 
       <h2>
-        Conheça a Estância Moraes
+        O seu tempo, do seu jeito.
+      </h2>
+
+
+      <div class="timeline">
+
+        <div class="time">
+
+          <small>
+            MANHÃ
+          </small>
+
+          <h3>
+            Sem pressa.
+          </h3>
+
+          <p>
+            Café, natureza e aquele silêncio
+            que faz bem.
+          </p>
+
+        </div>
+
+
+        <div class="time">
+
+          <small>
+            TARDE
+          </small>
+
+          <h3>
+            Para aproveitar.
+          </h3>
+
+          <p>
+            Piscina, churrasqueira, sinuca
+            e momentos juntos.
+          </p>
+
+        </div>
+
+
+        <div class="time">
+
+          <small>
+            NOITE
+          </small>
+
+          <h3>
+            Para ficar na memória.
+          </h3>
+
+          <p>
+            Conversa, descanso e uma noite tranquila.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LOCALIZAÇÃO -->
+
+  <section class="location">
+
+    <div>
+
+      <div class="tag">
+        AO REDOR
+      </div>
+
+      <h2>
+        Pirenópolis está logo ali.
       </h2>
 
       <p>
-        Um pouco do espaço que espera por você.
+        A Estância Moraes fica a aproximadamente
+        15 km do centro de Pirenópolis.
+      </p>
+
+      <p>
+        Você pode aproveitar a tranquilidade da
+        propriedade e, quando quiser, explorar
+        as belezas da região.
       </p>
 
     </div>
 
 
-    <div class="galeria">
+    <div class="map">
 
-      <div class="foto">
-        Foto da piscina
-      </div>
+      📍
+      <br>
+      <br>
 
-      <div class="foto">
-        Foto da chácara
-      </div>
+      PIRENÓPOLIS · GOIÁS
 
-      <div class="foto">
-        Foto dos quartos
-      </div>
+      <br>
+      <br>
 
-      <div class="foto">
-        Foto da churrasqueira
-      </div>
+      APROXIMADAMENTE 15 KM
+      <br>
 
-      <div class="foto">
-        Foto da sinuca
-      </div>
-
-      <div class="foto">
-        Foto da área de camping
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- MANIFESTO -->
-
-  <section class="manifesto">
-
-    <div class="titulo-pequeno">
-      MAIS DO QUE UMA ESTADIA
-    </div>
-
-    <h2>
-      É ter tempo para simplesmente estar presente.
-    </h2>
-
-    <p>
-      É passar o dia na piscina.<br>
-      É reunir todo mundo para um churrasco.<br>
-      É jogar uma partida de sinuca.<br>
-      É aproveitar a natureza.<br>
-      É conversar sem olhar para o relógio.<br>
-      É criar memórias que ficam.
-    </p>
-
-  </section>
-
-
-  <!-- AO REDOR -->
-
-  <section>
-
-    <div class="localizacao">
-
-      <div>
-
-        <div class="titulo-pequeno">
-          AO REDOR
-        </div>
-
-        <h2>
-          Descubra Pirenópolis
-        </h2>
-
-        <p>
-          A Estância Moraes está a aproximadamente
-          15 km do centro de Pirenópolis, permitindo
-          combinar momentos tranquilos na propriedade
-          com passeios pela cidade e pelas belezas
-          naturais da região.
-        </p>
-
-        <p>
-          Natureza, cachoeiras, gastronomia e o charme
-          de Pirenópolis fazem parte da experiência.
-        </p>
-
-      </div>
-
-
-      <div class="mapa">
-
-        📍<br><br>
-
-        PIRENÓPOLIS • GOIÁS<br>
-
-        Aproximadamente 15 km<br>
-        do centro de Pirenópolis
-
-      </div>
+      DO CENTRO
 
     </div>
 
@@ -844,45 +910,50 @@
 
   <!-- RESERVAS -->
 
-  <section class="reserva">
+  <section class="final">
 
-    <div class="reserva-conteudo">
+    <div class="tag">
+      ESTADIA
+    </div>
 
-      <div class="titulo-pequeno">
-        RESERVAS
-      </div>
+    <h2>
+      Alguns dias podem mudar
+      o ritmo de tudo.
+    </h2>
 
-      <h2>
-        Seu próximo descanso começa aqui.
-      </h2>
-
-      <p>
-        Consulte a disponibilidade e escolha a melhor
-        forma de fazer sua reserva.
-      </p>
+    <p>
+      Escolha como deseja reservar
+      sua experiência na Estância Moraes.
+    </p>
 
 
-      <div class="botoes">
+    <div class="buttons">
 
-        <a class="botao booking"
-           href="https://www.booking.com/Share-1VINV6"
-           target="_blank">
-          BOOKING
-        </a>
+      <a class="booking"
+         href="https://www.booking.com/Share-1VINV6"
+         target="_blank">
 
-        <a class="botao airbnb"
-           href="https://www.airbnb.com.br/rooms/1745824330797880590?unique_share_id=068b55f1-788e-4f70-a170-81f21ba41a4b&viralityEntryPoint=1&s=76"
-           target="_blank">
-          AIRBNB
-        </a>
+        BOOKING
 
-        <a class="botao whatsapp"
-           href="https://wa.me/5562993213203"
-           target="_blank">
-          WHATSAPP
-        </a>
+      </a>
 
-      </div>
+
+      <a class="airbnb"
+         href="https://www.airbnb.com.br/rooms/1745824330797880590?unique_share_id=068b55f1-788e-4f70-a170-81f21ba41a4b&viralityEntryPoint=1&s=76"
+         target="_blank">
+
+        AIRBNB
+
+      </a>
+
+
+      <a class="whatsapp"
+         href="https://wa.me/5562993213203"
+         target="_blank">
+
+        WHATSAPP
+
+      </a>
 
     </div>
 
@@ -898,21 +969,10 @@
     </strong>
 
     <p>
-      Pirenópolis • Goiás
+      Pirenópolis · Goiás
     </p>
 
   </footer>
-
-
-  <!-- WHATSAPP FIXO -->
-
-  <a class="whatsapp-fixo"
-     href="https://wa.me/5562993213203"
-     target="_blank">
-
-    🟢 WhatsApp
-
-  </a>
 
 
 </body>
